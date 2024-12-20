@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Icons_Black" data-name="Icons Black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.55 475.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m385.51,34c30.9,0,56.04,25.14,56.04,56.04v295.47c0,30.9-25.14,56.04-56.04,56.04H90.04c-30.9,0-56.04-25.14-56.04-56.04V90.04c0-30.9,25.14-56.04,56.04-56.04h295.47m0-34H90.04C40.31,0,0,40.31,0,90.04v295.47c0,49.73,40.31,90.04,90.04,90.04h295.47c49.73,0,90.04-40.31,90.04-90.04V90.04c0-49.73-40.31-90.04-90.04-90.04h0Z"/>
+  <g>
+    <g id="path0_fill" data-name="path0 fill">
+      <path class="cls-1" d="m198.78,363.76c23.18,0,42-18.81,42-42v-42h-42c-23.18,0-42,18.81-42,42s18.81,42,42,42Z"/>
+    </g>
+    <g id="path1_fill" data-name="path1 fill">
+      <path class="cls-1" d="m156.78,237.77c0-23.18,18.81-42,42-42h42v83.99h-42c-23.18,0-42-18.81-42-42Z"/>
+    </g>
+    <g id="path1_fill-2" data-name="path1 fill">
+      <path class="cls-1" d="m156.78,153.78c0-23.18,18.81-42,42-42h42v83.99h-42c-23.18,0-42-18.81-42-42Z"/>
+    </g>
+    <g id="path2_fill" data-name="path2 fill">
+      <path class="cls-1" d="m240.77,111.79h42c23.18,0,42,18.81,42,42s-18.81,42-42,42h-42v-83.99Z"/>
+    </g>
+    <g id="path3_fill" data-name="path3 fill">
+      <circle class="cls-1" cx="282.77" cy="237.77" r="42"/>
+    </g>
+  </g>
+</svg>

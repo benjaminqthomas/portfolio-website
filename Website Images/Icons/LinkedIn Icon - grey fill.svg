@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Icons_Black" data-name="Icons Black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.96 254.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f2f2f2;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="logo">
+    <rect class="cls-1" x="4.1" y="84.51" width="52.91" height="169.91"/>
+    <path class="cls-1" d="m254.96,147.32v107.1h-52.91v-84.1c.28-5.14.31-9.88,0-14.2-1.43-20.75-9.98-31.83-28.19-31.83-4.84.26-9.29,1.23-13.23,3.12-11.33,5.4-18.58,18.19-19.06,42.91v84.1h-52.91V84.51h50.86s.51,21.57.51,21.57c15.15-18.34,34.74-29.35,62.02-27.61,38.48,6.29,51.83,32.65,52.91,68.85Z"/>
+    <circle class="cls-1" cx="30.55" cy="30.55" r="30.55"/>
+  </g>
+</svg>
