@@ -3,339 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Portfolio Home Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script> <!-- Link to JavaScript file -->
+    <!-- <script src="index.js" defer></script> Link to JavaScript file -->
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
-<header>
-
-    <nav id="navbar section hidden">
-        <div class="nav-logo"><a href="#"><img src="./Website Images/Logo/Ben Thomas Official Logo Assets NEW_BT Full Horiz_light grey.svg" alt="Ben Thomas Logo"></a></div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">THE VAULT</a></li>
-            </ul>
-        </div> 
-
-        <button class="btn-primary">Let's Work Together!</button>
-        <!-- <div class="nav-socials">
-            <a href="./index.html"><img src="./Website Images/Icons/IG Icon - grey fill.svg" alt="instagram icon"></a>
-            <a href="./index.html"><img src="./Website Images/Icons/LinkedIn Icon - grey fill.svg" alt="LinkedIn icon"></a>
-            <a href="./index.html"><img src="./Website Images/Icons/Email-icon.svg" alt="Email icon" id="email-icon"></a>
-        </div> -->
-
-        
-    <div class="menu" id="toggle-menu">
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
+    <div id="nav-container">
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-container').innerHTML = html;
+                });
+        </script>
     </div>
 
-    </nav>
+    <div class="hero">
 
-    <div class="mobile-menu" id="mobileMenu">
-        <!-- <div class="close-btn" id="closeBtn">&#10006;</div> -->
-        <ul class="mobile-nav-links">
-            <li><a href="#">WORK</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">RESUME</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">THE VAULT</a></li>
-        </ul>
-        <div class="mobile-social-icons">
-            <a href="./index.html"><img src="./Website Images/Icons/IG Icon - grey fill.svg" alt="instagram icon"></a>
-            <a href="./index.html"><img src="./Website Images/Icons/LinkedIn Icon - grey fill.svg" alt="LinkedIn icon"></a>
-            <a href="./index.html"><img src="./Website Images/Icons/Email-icon.svg" alt="Email icon"></a>
+    </div>
+
+    <main>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="p3">
+                    UI/UX DESIGNER | GRAPHIC DESIGNER
+                </p>
+                <h1>
+                    Hello There! <span class="h1-gradient">I'm Ben</span>
+                </h1>
+                <p class="p2">
+                    I'm a Graphic and UI/UX Designer with a passion for crafting designs that solve solutions and captivate audiences. Welcome to my portfolio!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary"><a href="#">Projects</a></button>
+                    <button class="btn-primary"><a href="#">About Me</a></button>
+
+                </div>
+            </div>
         </div>
-    </div>
 
-
-</header>
-
-
-
-<div class="hero-2 section hidden">
-    <div class="hero-container">
-    <div class="hero-content-2">
-        <h5 id="hero-sub-2">
-            UI/UX DESIGNER | GRAPHIC DESIGNER
-        </h5>
-        <h1>
-            Welcome to my Portfolio :)
-        </h1>
-        <p class="p2">
-            I'm a Graphic and UI/UX Designer with a passion for crafting designs that solve solutions and captivate audiences. Welcome to my portfolio!
-        </p>
-
-        <div class="hero-buttons">
-            <button class="btn-2" onclick="document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });">
-                Projects
-            </button>
-            <button class="btn-3">
-                About Me
-            </button>
-        </div>
-    </div>
-    <div class="hero-img-content">
-        <img src="./Website Images/Personal Images/IMG_0238.JPG" id="hero-img">
-        <h6>
-            Lexington, KY
-        </h6>
-    </div>
-    </div>
-
-</div>
-    
-
-
-    <!-- <div class="hero section hidden">
-        <img src="./Website Images/Personal Images/Berea-East Pinnacle Lookout-1.jpg" alt="Ben on Mountain Lookout" class="hero-img">
-        <div class="hero-content">
-            <h5 id="hero-sub">
-                HI, I'M BEN!
-            </h5>
-            <h1>
-                Welcome to my Portfolio :)
-            </h1>
-            <p class="p2">
-                I'm a Graphic and UI/UX Designer with a passion for crafting designs that solve solutions and captivate audiences. Welcome to my portfolio!
+        <div class="title-section">
+            <p>
+                Case Studies
             </p>
+            <h2>
+                Featured Projects
+            </h2>
+        </div>
 
-            <div class="hero-buttons">
-                <button class="btn-2" onclick="document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });">
-                    Projects
-                </button>
-                <button class="btn-3">
-                    About Me
-                </button>
+        <div class="featured-projects">
+            <div class="project-card-1" id="LLP">
+                <div class="pc1-main-content">
+                    <div class="pc1-content">
+                        <h3>
+                            Labor Law Pro Application
+                        </h3>
+                        <p class="p3">
+                            UI/UX Design
+                        </p>
+                    </div>
+                    <div class="pc1-button">
+                        <a href="#">
+                            <p class="p3">View Project</p>
+                            <img src="./Website Images/Icons/Arrow Icon-light grey.svg">
+                        </a>
+                    </div>
+                </div>
+                <img src="./Website Images/LLP Application/LLP - Dashboard.jpg" alt="" class="pc1-img">
+
             </div>
         </div>
 
-    </div> -->
-
-
-
-<div class="title-section section hidden" id="title-sub">
-    <h6>CASE STUDIES</h6>
-    <h2>
-        Featured Projects
-    </h2>
-</div>
-
-<div class="project-cards-3">
-    <div class="pc3-content"> 
-        <div class="pc3-type">
-            <h3>The Katsbrune Bookstore & Cafe</h3>
-            <h6>Branding Identity & Guidelines</h6>
-        </div>
-        <img src="./Website Images/Icons/Arrow Icon-light grey.svg" alt="arrow icon">
-    </div>
-<img src="./Website Images/Katsbrune/Katsbrune-thumbnail-1.jpg" alt="Katsbrune Logo Thumbnail" class="pc3-img">
-</div>
 
 
 
 
-<div class="project-cards-2" id="section2">
-    <div class="pc2 section hidden">
-        <div class="content">
-            <div class="pc-copy">
-                <h3>The Katsbrune Bookstore & Cafe</h3>
-                <h6>Branding Identity & Guidelines</h6>
-            </div>
-            <div class="pc2-button">
-                <button>View Project <img src="./Website Images/Icons/Arrow Icon-light grey.svg"></button>
-                
-            </div>
-        </div>
-        <div class="pc2-img">
-            <img src="./Website Images/Katsbrune/Katsbrune-thumbnail-1.jpg">
-        </div>
-    </div>
-
-    <div class="pc2 pc2-reverse section hidden">
-
-        <div class="pc2-img">
-            <img src="./Website Images/Ignite Lacrosse Club/Ignite-thumbnail-1.jpg">
-        </div>
-        <div class="content content-reverse">
-            <div class="pc-copy">
-                <h3>Ignite Lacrosse CLub</h3>
-                <h6>Branding Identity</h6>
-            </div>
-            <div class="pc2-button">
-                <button>View Project <img src="./Website Images/Icons/Arrow Icon-light grey.svg"></button>
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="pc2 section hidden">
-        <div class="content">
-            <div class="pc-copy">
-                <h3>The Katsbrune Bookstore & Cafe</h3>
-                <h6>Branding Identity & Guidelines</h6>
-            </div>
-            <div class="pc2-button">
-                <button>View Project <img src="./Website Images/Icons/Arrow Icon-light grey.svg"></button>
-                
-            </div>
-        </div>
-        <div class="pc2-img">
-            <img src="./Website Images/Katsbrune/Katsbrune Presentation37.jpg">
-        </div>
-    </div>
-
-    <div class="pc2 pc2-reverse section hidden">
-
-        <div class="pc2-img">
-            <img src="./Website Images/Katsbrune/Katsbrune Presentation37.jpg">
-        </div>
-        <div class="content content-reverse">
-            <div class="pc-copy">
-                <h3>Ignite Lacrosse CLub</h3>
-                <h6>Branding Identity</h6>
-            </div>
-            <div class="pc2-button">
-                <button>View Project <img src="./Website Images/Icons/Arrow Icon-light grey.svg"></button>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="title-section section hidden" id="title-sub">
-    <h6>DEEP DIVE</h6>
-    <h2>
-        Other Projects
-    </h2>
-</div>
-
-<div class="title-section section hidden" id="title-sub">
-    <h6>WHAT I OFFER</h6>
-    <h2>
-        SERVICES & SPECIALTIES
-    </h2>
-</div>
-
-<div class="title-section-2 section hidden">
-    <h2>
-        Software Skills
-    </h2>
-
-    <!-- <div class="skill-icons">
-        <img src="./Website Images/Icons/Icon_Adobe Suite Outline.svg" alt="Adobe Icon">
-        <img src="./Website Images/Icons/Ai Outline.svg" alt="Illustrator icon">
-        <img src="./Website Images/Icons/Id Outline.svg" alt="InDesign Icon">
-        <img src="./Website Images/Icons/Ps Outline.svg" alt="Photoshop Icon">
-        <img src="./Website Images/Icons/Ae Outline.svg" alt="After Effects Icon">
-        <img src="./Website Images/Icons/Icon_Figma Outline.svg" alt="Figma Icon">
-    </div> -->
-
-    <div class="skill-icons section hidden">
-        <div class="icon-box"><img src="./Website Images/Icons/Adobe-Icon.svg" alt="Adobe Icon"><div class="icon-desc">Adobe</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/Illustrator-icon.svg" alt="Illustrator icon"><div class="icon-desc">Illustrator</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/InDesign-icon.svg" alt="InDesign Icon"><div class="icon-desc">InDesign</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/photoshop-icon.svg" alt="Photoshop Icon"><div class="icon-desc">Photoshop</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/Figma-Icon.svg" alt="Figma Icon"><div class="icon-desc">Figma</div></div>
-        <div class="icon-box" id="ae-icon-box"><img src="./Website Images/Icons/after effects-icon.svg" alt="After Effects Icon"><div class="icon-desc">After Effects</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/html-icon.svg" alt="HTML Icon"><div class="icon-desc">HTML</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/css-icon.svg" alt="CSS Icon"><div class="icon-desc">CSS</div></div>
-        <div class="icon-box"><img src="./Website Images/Icons/JavaScript-icon.svg" alt="JavaScript Icon"><div class="icon-desc">JavaScript</div></div>
-    </div>
-</div>    
-
-
-
-
-
-<div class="title-section section hidden">
-        <h2>
-            Qualities
-        </h2>
-</div>    
-
-<div class="qualities">
-    <div class="q-card card-1 section hidden" id="videoDiv">
-        <video id="video1" id="bulb-animation" muted>
-            <source src="./Website Images/Icons/Qualities Icons/Bulb Animation-rgb.mp4" type="video/mp4">
-        </video>
-
-        <div class="q-content">
-            <h3>
-                Problem Solving
-            </h3>
-            <p class="p2">
-                Finding unique and innovative solutions that drive actionable results
-            </p>
-        </div>
-    </div>
-
-    <div class="q-card card-1 section hidden" id="videoDiv2">
-        <video id="video2" id="people-animation" muted>
-            <source src="./Website Images/Icons/Qualities Icons/people animation-rgb.mp4" type="video/mp4">
-        </video>
-
-        <div class="q-content">
-            <h3>
-                Collaboration
-            </h3>
-            <p class="p2">
-                Working with like-minded people and businesses to create breath-taking projects</p>
-        </div>
-    </div>
-
-    <div class="q-card card-1 section hidden" id="videoDiv3">
-        <video id="video3" id="detail-animation" muted>
-            <source src="./Website Images/Icons/Qualities Icons/Detail Animation.mp4" type="video/mp4">
-        </video>
-
-        <div class="q-content">
-            <h3>
-                Attention to Detail
-            </h3>
-            <p class="p2">
-                Prioritizing quality and small details that create lasting impressions            
-            </p>
-        </div>
-    </div>
-</div>
+    </main>
 
 
 
     
-<footer>
-    <img src="./Website Images/Logo/Ben Thomas Official Logo Assets NEW_BT Full Horiz_light grey.svg" alt="Ben Thomas Logo">
-    <ul class="links">
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">RESUME</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><a href="#">THE VAULT</a></li>
-    </ul>
-    <div class="footer-socials">
-        <h4>Get in touch!</h4>
-        <div class="social-icons">
-            <a href="#"><img src="./Website Images/Icons/IG Icon - grey fill.svg" alt="instagram icon"></a>
-            <a href="#"><img src="./Website Images/Icons/LinkedIn Icon - grey fill.svg" alt="LinkedIn icon"></a>
-            <a href="#"><img src="./Website Images/Icons/Email-icon.svg" alt="Email icon"></a>
-        </div>
-    </div>
-</footer>
-
-<script>index.js</script>
-
 </body>
 </html>
