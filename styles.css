@@ -66,7 +66,7 @@
 }
 
 img {
-  border-radius: .6rem;
+  border-radius: clamp(2px, 5vw, 10px);
 }
 
 
@@ -79,7 +79,7 @@ h1, h2, h3, .h7 {
 }
 
 h1 {
-  font-size: clamp(3rem, 8vw, 5.125rem);
+  font-size: clamp(48px, 8vw, 82px);
     background: linear-gradient(180deg, #5FBCFF 12.5%, #006AB6 120%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -100,14 +100,14 @@ h1 {
 
 
 h2 {
-    font-size: 2.8rem;
+    font-size: clamp(2rem, 5vw, 2.8rem);
     color: var(--Primary-Light-Grey, #EEE);
     text-align: center;
 }
 
 h3 {
-    line-height: 2.4rem;
-    font-size: 2rem;
+    line-height: clamp(1.5rem, 5vw, 2.4rem);
+    font-size: clamp(1.25rem, 5vw, 2rem);
     text-align: left;
 }
 
@@ -147,20 +147,30 @@ p {
   text-align: center;
 }
 
+.hero-content .p2 {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: clamp(2rem, 5vw, 2.6rem);
+
+}
+
 
 .p2 {
-  font-size: clamp(.075rem, 8vw, 1.1rem);
+  font-size: clamp(14px, 2vw, 18px);
   text-align: center;
-  line-height: 2.1rem;
-
+  line-height: clamp(1.8rem, 8vw, 2.1rem);
 }
 
 .p3, .nav-links a {
   font-family: 'azo';
-  font-size: clamp(0.875rem, 8vw, 1.125rem);
+  /* font-size: clamp(14px, 2vw, 18px); */
   line-height: 1.2rem;
   letter-spacing: 0.1125rem;
   text-align: center;
+}
+
+.p3 {
+  font-size: clamp(14px, 2vw, 18px);
+
 }
 
 
@@ -366,8 +376,13 @@ button {
     border-radius: 4.0625rem;
     border: 1px solid var(--Secondary-light-Grey, #B5B5B5);
     background: var(--Secondary-Grey, #19191B);
-    font-size: 1rem;
+    font-size: clamp(14px, 5vw, 18px);
     font-family: 'azo-light';
+  }
+
+  .btn-primary a{
+    font-size: clamp(14px, 5vw, 18px);
+    color: var(--primary-light-grey);
 
   }
 
@@ -380,6 +395,8 @@ button {
   .hero {
     width: 100%;
     background: linear-gradient(to top, var(--primary-grey), var(--alt-grey));
+    padding-right: clamp(1.8rem, 8vw, 4rem);
+    padding-left: clamp(1.8rem, 8vw, 4rem);
   }
 
 
@@ -394,18 +411,22 @@ button {
 
   .hero-buttons {
     gap: 1.2rem;
-    padding-top: 2rem;
+    padding-top: clamp(2rem, 5vw, 3rem);
+    flex-wrap: wrap;
   }
 
 
   .hero-content p {
-    max-width: 612px;
-    margin: 0 auto;
+    max-width: 660px;
+  }
+
+  .hero .p3 {
+    color: var(--primary-light-grey);
   }
 
   .hero h1 {
-    margin-bottom: 1.4rem;
-    margin-top: .8rem;
+    margin-bottom: clamp(16px, 2vw, 36px);
+    margin-top: clamp(4px, 2vw, 14px);
   }
 
 
@@ -416,7 +437,9 @@ button {
   /* Title Section */
 
   .title-section {
-    padding: 3.1rem 0;
+    padding-top: clamp(2rem, 5vw, 3.1rem);
+    padding-bottom: clamp(2rem, 5vw, 3.1rem);
+
 
   }
 
@@ -425,6 +448,10 @@ button {
     letter-spacing: .2rem;
     font-family: 'azo';
     color: var(--primary-blue);
+  }
+
+  .title-section h2 {
+    margin-top: -10px;
   }
 
   /* End of Title Section */
@@ -437,6 +464,9 @@ button {
   .featured-projects {
     display: flex;
     justify-content: center;
+    padding-top: clamp(0px, 5vw, 50px);
+    padding-bottom: clamp(0px, 5vw, 50px);
+
     
   }
 
@@ -448,15 +478,15 @@ button {
   .project-card-1 {
     max-width: 1100px;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 10 / 7;
     background: linear-gradient(45deg, var(--secondary-grey), var(--alt-grey));
-    padding: 3.125rem;
+    padding: clamp(1.5625rem, 5vw, 3.125rem);
     padding-bottom: 0;
     border-radius: 0.75rem;
     border: 1px solid var(--Alt-Grey, #262626);
     overflow: hidden;
     flex-direction: column;
-    gap: 3.8rem;
+    gap: clamp(2rem, 5vw, 3.8rem);
     transition: .5s ease;
     position: relative;
     cursor: pointer;
@@ -494,7 +524,7 @@ button {
 
   .pc1-content {
     flex-direction: column;
-    gap: .5rem;
+    gap: clamp(2px, 2vw, 14px);
   }
 
   .pc1-content .p3 {
@@ -521,7 +551,12 @@ button {
   }
 
   .pc1-img {
-    width: 90%;
+    position: absolute;
+    top: 66%; /* Move to the vertical center */
+    left: 50%; /* Move to the horizontal center */
+    transform: translate(-50%, -50%); /* Offset by half the image dimensions */
+    width: 82%;
+    margin-top: 2%;
     height: auto;
     margin: 0 auto;
     transition: .5s ease;
@@ -543,4 +578,36 @@ button {
       display: flex;
     }
 
+  }
+
+  @media (max-width: 800px) {
+    .pc1-button .p3 {
+      display: none;
+    }
+
+
+  }
+
+
+  @media (max-width: 470px) {
+    .hero-content h1 {
+      max-width: 300px;
+    }
+
+    .hero .p2 {
+      text-align: left;
+      max-width: 308px;
+    }
+
+    .hero-buttons {
+    }
+
+  }
+
+  @media (max-width: 370px) {
+    .hero .p3 {
+      max-width: 175px;
+    }
+
+   
   }
