@@ -16,6 +16,62 @@
 
 // Project Scroll Animation
 
+//Mobile Menu Navigation
+
+    // Select the toggle menu and mobile menu elements
+    const toggleMenu = document.getElementById("toggle-menu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    // Add an event listener to the toggle menu
+    toggleMenu.addEventListener("click", () => {
+        // Toggle the "show" class on the mobile menu
+        mobileMenu.classList.toggle("show");
+
+
+    });
+
+
+    // Function to close the mobile menu
+    function closeMobileMenu(event) {
+        // Check if the clicked element is NOT the menu or its children
+        if (
+            !mobileMenu.contains(event.target) && 
+            !toggleMenu.contains(event.target)
+        ) {
+            mobileMenu.classList.remove("show");
+            toggleMenu.classList.remove("active");
+        }
+    }
+
+        // Event listener for the hamburger menu
+        toggleMenu.addEventListener("click", toggleMobileMenu);
+
+        // Event listener for clicks outside the menu
+        document.addEventListener("click", closeMobileMenu);
+
+
+
+
+// Mobile Menu the sliding effect
+
+        // document.getElementById('toggle-menu').addEventListener('click', function() {
+        //     const mobileMenu = document.getElementById('mobileMenu');
+        //     mobileMenu.classList.toggle('show'); // Toggle the 'show' class
+        // });
+
+
+
+        // const mobileMenu = document.getElementById('mobile-menu');
+        // const toggleMenu = document.getElementById('toggle-menu');
+
+        // // Close the div when clicking outside of it
+        // document.addEventListener('click', function (event) {
+        // const isClickInside = mobileMenu.contains(event.target) || toggleMenu.contains(event.target);
+
+        // if (!isClickInside) {
+        // mobileMenu.style.opacity = '0'; // Close the div if the click is outside
+        // }
+        // });
 
 // Section Scroll Animations 
 
@@ -38,29 +94,6 @@
     // Observe each section
     sections.forEach(section => {
         observer.observe(section);
-    });
-
-
-
-// Mobile Menu the sliding effect
-
-                document.getElementById('toggle-menu').addEventListener('click', function() {
-                    const mobileMenu = document.getElementById('mobileMenu');
-                    mobileMenu.classList.toggle('show'); // Toggle the 'show' class
-                });
-
-
-
-    const mobileMenu = document.getElementById('mobile-menu');
-    const toggleMenu = document.getElementById('toggle-menu');
-
-    // Close the div when clicking outside of it
-    document.addEventListener('click', function (event) {
-        const isClickInside = mobileMenu.contains(event.target) || toggleMenu.contains(event.target);
-
-        if (!isClickInside) {
-            mobileMenu.style.opacity = '0'; // Close the div if the click is outside
-        }
     });
 
 
@@ -96,3 +129,63 @@
             
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Mobile menu 
+
+//     const toggleMenu = document.getElementById('toggle-menu');
+// const mobileMenu = document.getElementById('mobileMenu');
+
+// // Add click event listener to the trigger div
+// toggleMenu.addEventListener('click', () => {
+//     // Toggle the visibility class on the target div
+//     toggleMenu.classList.toggle('visible');
+//     toggleMenu.classList.toggle('hidden');
+// });
+
+
+
+
+
+// Mobile Menu the sliding effect
+
+    //             document.getElementById('toggle-menu').addEventListener('click', function() {
+    //                 const mobileMenu = document.getElementById('mobileMenu');
+    //                 mobileMenu.classList.toggle('show'); // Toggle the 'show' class
+    //             });
+
+
+
+    // const mobileMenu = document.getElementById('mobileMenu');
+    // const toggleMenu = document.getElementById('toggle-menu');
+
+    // // Close the div when clicking outside of it
+    // document.addEventListener('click', function (event) {
+    //     const isClickInside = mobileMenu.contains(event.target) || toggleMenu.contains(event.target);
+
+    //     if (!isClickInside) {
+    //         mobileMenu.style.opacity = '0'; // Close the div if the click is outside
+    //     }
+    // });
+
+ // Select the menu icon and mobile menu
+        // const toggleMenu = document.getElementById('toggle-menu');
+        // const mobileMenu = document.getElementById('mobileMenu');
+
+        // // Add click event to toggle the "show" class
+        // toggleMenu.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('show');
+        //     toggleMenu.classList.toggle('active'); // Optional: animate the menu icon
+        // });
