@@ -70,12 +70,17 @@ img {
 }
 
 
-h1, h2, h3, .h7 {
+h1, h2, h3, h4 {
     font-family: 'acumin';
     color: var(--primary-light-grey);
     text-transform: uppercase;
         text-align: center;
 
+}
+
+h5, h6, .h7, .h8, .h10 {
+  font-family: 'azo-bold';
+  color: var(--primary-light-grey);
 }
 
 h1 {
@@ -113,12 +118,12 @@ h3 {
 
 h4 {
     line-height: 1.3rem;
-    font-size: 1.5rem;
+    font-size: clamp(20px, 5vw, 24px);
 }
 
 h5 {
-    line-height: 1.6rem;
-    font-size: 1.8rem;
+    line-height: clamp(23px, 5vw, 27px);
+    font-size: clamp(14px, 5vw, 20px);
     letter-spacing: .2rem;
     color: var(--primary-light-grey);
 }
@@ -378,6 +383,12 @@ button {
     background: var(--Secondary-Grey, #19191B);
     font-size: clamp(14px, 5vw, 18px);
     font-family: 'azo-light';
+    transition: .5s ease;
+  }
+
+  .btn-primary:hover {
+    background: var(--alt-grey);
+    /* transform: scale(1.02); */
   }
 
   .btn-primary a{
@@ -385,6 +396,8 @@ button {
     color: var(--primary-light-grey);
 
   }
+
+  /* Hero Styling */
 
   .hero, .hero-buttons, .hero-content {
     display: flex;
@@ -478,12 +491,11 @@ button {
   .project-card-1 {
     max-width: 1100px;
     width: 100%;
-    aspect-ratio: 10 / 7;
     background: linear-gradient(45deg, var(--secondary-grey), var(--alt-grey));
     padding: clamp(1.5625rem, 5vw, 3.125rem);
     padding-bottom: 0;
     border-radius: 0.75rem;
-    border: 1px solid var(--Alt-Grey, #262626);
+    /* border: 1px solid var(--Alt-Grey, #262626); */
     overflow: hidden;
     flex-direction: column;
     gap: clamp(2rem, 5vw, 3.8rem);
@@ -508,6 +520,10 @@ button {
 
   .project-card-1:hover::before {
     opacity: .8;
+  }
+
+  .project-card-1:hover {
+    /* border: 1px solid rgb(145, 145, 145); */
   }
 
 
@@ -551,11 +567,7 @@ button {
   }
 
   .pc1-img {
-    position: absolute;
-    top: 66%; /* Move to the vertical center */
-    left: 50%; /* Move to the horizontal center */
-    transform: translate(-50%, -50%); /* Offset by half the image dimensions */
-    width: 82%;
+    width: 90%;
     margin-top: 2%;
     height: auto;
     margin: 0 auto;
@@ -566,6 +578,48 @@ button {
   .project-card-1:hover .pc1-img {
     transform: scale(1.02);
   }
+
+
+  /* service cards */ 
+
+  .service-card-container, .service-card {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .service-card-container {
+    gap: clamp(25px, 5vw, 40px);
+  }
+
+  .service-card {
+    background-color: var(--secondary-grey);
+    width: 100%;
+    height: 100%;
+    stroke: 1px var(--alt-grey);
+    padding-top: clamp(40px, 5vw, 60px);
+    padding-left: clamp(25px, 5vw, 30px);
+    padding-right: clamp(25px, 5vw, 30px);
+    padding-bottom: clamp(25px, 5vw, 30px);
+    max-width: 270px;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: ease .5s;
+  }
+
+  .service-card h4 {
+    margin-top: clamp(15px, 5vw, 30px);
+    margin-bottom: 16px;
+  }
+
+  .service-card:hover {
+    transform: scale(1.02);
+
+  }
+
+
   
   
 
