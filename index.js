@@ -126,6 +126,38 @@
         videoDiv3.addEventListener('mouseenter', function() {
             video3.play();
         });
+
+
+
+// Bulb Animation Hover Play //
+
+
+const video1 = document.getElementById('video1');
+const videoDiv = document.getElementById('videoDiv');
+
+// Play the video when the div is hovered
+videoDiv.addEventListener('mouseenter', function() {
+    video1.play();
+});
+
+// People Animation Hover Play //
+    const video2 = document.getElementById('video2');
+    const videoDiv2 = document.getElementById('videoDiv2');
+
+    // Play the video when the div is hovered
+    videoDiv2.addEventListener('mouseenter', function() {
+        video2.play();
+    });
+
+// Detail Animation Hover Play //
+    const video3 = document.getElementById('video3');
+    const videoDiv3 = document.getElementById('videoDiv3');
+
+    // Play the video when the div is hovered
+    videoDiv3.addEventListener('mouseenter', function() {
+        video3.play();
+    });
+                
             
 
     
