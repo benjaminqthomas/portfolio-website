@@ -20,15 +20,42 @@
         </script>
     </div>
 
-<main>
+<div class="hero-2">
+    <div class="hero-2-container resume-container">
+        <div class="hero-2-content resume-content">
+            <div class="sub-title">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight">
+                <h5>
+                    RESUME
+                </h5>
+            </div>
+            <h1 class="h9">
+                My Experience
+            </h1>
+            <p class="p2">
+                I’ve had the pleasure of working with small business owners and big corporations. Through my work, I’ve gained valuable experience in the realm of design and across various industries. Review, share, or download my resume here!
+            </p>
+            <button class="btn-primary">
+                Download Resume
+            </button>
+        </div>
+        <div class="resume-img round-img">
+            <img src="./Website Images/Assets/Resume 3d Render-v2.png" alt="Ben Thomas Headshot">
+        </div>
+    </div>
+</div>
 
 
 
-
-
-</main>
-
-
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
     <script src="index.js"></script>
   
 </body>

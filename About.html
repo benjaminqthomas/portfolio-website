@@ -20,15 +20,44 @@
         </script>
     </div>
 
-<main>
+<div class="hero-2">
+    <div class="hero-2-container">
+        <div class="hero-2-content">
+            <div class="sub-title">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight">
+                <h5>
+                    ABOUT ME
+                </h5>
+            </div>
+            <h1 class="h9">
+                Designer, Reader, Nature Enthusiast
+            </h1>
+            <p class="p2">
+                My passions reside in creating beautiful experiences and designs that empower people. Whether I’m working to design products or materials that bolster an established or small, local business, I love working with people to create meaningful designs and experiences that leave a lasting impression. 
+                <br><br>
+                Outside of work, you can find me nose-deep in my favorite fantasy books (I’m looking at you Lord of the Rings), hiking around Kentucky’s beautiful landscape, or coaching lacrosse.
+                <br><br>
+                Thanks for stopping by!
+            </p>
+            <img src="./Website Images/Assets/BT Signature-v1.svg" alt="Ben Thomas Signature">
+        </div>
+        <div class="hero-2-img round-img">
+            <img src="./Website Images/Assets/Ben Thomas Official Headshot.jpg" alt="Ben Thomas Headshot">
+        </div>
+    </div>
+</div>
 
 
 
-
-
-</main>
-
-
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
     <script src="index.js"></script>
   
 </body>
