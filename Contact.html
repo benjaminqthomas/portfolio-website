@@ -20,15 +20,42 @@
         </script>
     </div>
 
-<main>
+<div class="hero-2">
+    <div class="hero-2-container resume-container">
+        <div class="hero-2-content half resume-content">
+            <div class="sub-title">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight">
+                <h5>
+                    CONTACT ME
+                </h5>
+            </div>
+            <h1 class="h9">
+                Get in Touch!
+            </h1>
+            <p class="p2">
+                I’m always looking for new opportunities to work with like-minded businesses and individuals. If you’d like to work together, get a quote for a service I offer, or if you have any questions, reach out!
+            </p>
+            <a href="#"><button class="btn-primary">
+                Let's Work Together!
+            </button></a>
+        </div>
+        <div class="resume-img half round-img">
+            <img src="./Website Images/Assets/Chat Bubble 3d Render.png" alt="Ben Thomas Headshot">
+        </div>
+    </div>
+</div>
 
 
 
-
-
-</main>
-
-
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
     <script src="index.js"></script>
   
 </body>
