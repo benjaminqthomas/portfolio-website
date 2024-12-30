@@ -78,6 +78,51 @@ ul {
   list-style: none;
 }
 
+/* Scroll Animation */
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  /* filter: blur(1px); */
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0px);
+
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+}
+
+/* @keyframes appear {
+  from{
+    opacity: 0;
+    scale: .5;
+  }
+to{
+  opacity: 1;
+  scale: 1;
+}
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover;
+} */
+
 
 h1, h2, h3, h4 {
   font-family: 'acumin';
@@ -153,7 +198,7 @@ h6 {
 .h8 {
   font-family: 'azo-light';
   color: var(--secondary-light-grey);
-  letter-spacing: 4pt;
+  letter-spacing: 3pt;
   font-size: clamp(12px, 5vw, 14px);
   text-align: left;
 }
@@ -416,7 +461,7 @@ a {
 /* Button Styling */
 
 
-button {
+button, .btn-2 {
   font-family: 'azo';
   letter-spacing: .06rem;
 }
@@ -434,6 +479,7 @@ button {
     font-family: 'azo-light';
     transition: .5s ease;
     cursor: pointer;
+    line-height: 2rem;
   }
 
 
@@ -505,9 +551,6 @@ button {
 
 }
 
-.btn-2:hover::after {
-  /* inset: -2px; */
-}
 
 .btn-2:hover::before {
   inset: -2px;
@@ -566,10 +609,12 @@ button {
 
   .hero .p3 {
     color: var(--primary-light-grey);
+    font-size: clamp(14px, 5vw, 20px);
+    line-height: 1.8rem;
   }
 
   .hero h1 {
-    margin-bottom: clamp(16px, 2vw, 36px);
+    margin-bottom: clamp(16px, 2vw, 26px);
     margin-top: clamp(4px, 2vw, 14px);
   }
 
@@ -1112,6 +1157,7 @@ button {
   display: flex;
   align-items: center;
   gap: 1%;
+  margin-left: -.8%;
 }
 
 .section-subtitle img {
@@ -1200,9 +1246,33 @@ button {
 
 .project-image {
   border-radius: clamp(2px, 5vw, 10px);
-  padding: clamp(25px, 5vw, 50px);
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: clamp(30px, 5vw, 40px);
+}
+
+.project-image, .img-columns {
+  padding-top:     ;
+  padding-bottom: clamp(25px, 5vw, 50px);
+}
+
+.img-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: clamp(20px, 5vw, 30px);
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-columns img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
 }
 
 .project-image img{
@@ -1210,11 +1280,76 @@ button {
   width: 100%;
   height: 100%;
   border-radius: clamp(2px, 5vw, 10px);
+}
 
+#prototype-btn {
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: clamp(25px, 5vw, 50px);
+}
 
+.llp-bg {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(to top, #11305D, #2D5BAE);
+  padding-top: clamp(30px, 5vw, 80px);
+  padding-bottom: clamp(30px, 5vw, 80px);
+  padding-right: clamp(30px, 5vw, 90px);
+  padding-left: clamp(30px, 5vw, 90px);
+  display: flex;
+  flex-wrap: wrap;
+  gap:clamp(25px, 5vw, 30px);
+  justify-content: center;
+  margin-top:  clamp(25px, 5vw, 50px);
+  margin-bottom:  clamp(25px, 5vw, 50px);
+}
+
+.solution-card {
+  flex: 1 1 1;
+  width: clamp(284px, 5vw, 300px);
+  object-fit: cover;
 
 }
-  
+
+@media (max-width: 600px) {
+  .solution-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+#pad50, #llp-brand, .pad50 {
+  padding-top: clamp(25px, 5vw, 50px) !important;
+}
+
+#pad25 {
+  padding-top: 25px;
+}
+
+#pad0 {
+  padding-top: 0px;
+}
+
+#margin0 {
+  margin-bottom: 0;
+}
+
+
+
+#research-img img, #final-designs img {
+  clip-path: inset(0 0 2px 0);
+}
+
+
+.final-pc-buttons {
+  display: flex;
+  justify-content: center;
+  gap: clamp(12px, 5vw, 24px);
+  flex-wrap: wrap;
+  margin-bottom: clamp(25px, 5vw, 50px);
+}
 
 
  /*footer*/
@@ -1234,6 +1369,7 @@ footer {
   padding-bottom: clamp(4rem, 5vw, 8rem);
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: clamp(100px, 5vw, 200px);
   background-color: var(--secondary-grey);
   /* margin-top: clamp(4rem, 5vw, 8rem); */
   max-width: 100%;
@@ -1354,14 +1490,17 @@ footer a {
       /* padding-top: clamp(2rem, 5vw, 8rem); */
     }
 
+    .img-columns {
+      grid-template-columns: 1fr;    
+    }
+
+
+
 
 
 
 
   }
-
-
-
 
 
   @media (max-width: 690px) {
@@ -1395,6 +1534,12 @@ footer a {
     margin-top: 2%;
   }
 
+  @media (max-width: 494px) {
+    .hero .p3 {
+      max-width: 290px;
+    }
+  }
+
 
   @media (max-width: 470px) {
     .hero-content h1 {
@@ -1415,7 +1560,7 @@ footer a {
 
   @media (max-width: 370px) {
     .hero .p3 {
-      max-width: 175px;
+      max-width: 220px;
     }
 
    
