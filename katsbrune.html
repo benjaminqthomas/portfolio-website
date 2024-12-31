@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLP Application Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+
+
+</head>
+<body class>
+    <div id="nav-container">
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-container').innerHTML = html;
+                });
+        </script>
+     </div>   
+
+    <div class="project-hero-container hidden">
+        <div class="project-hero">
+            <div class="ph-content">
+                <h2 class="h10">
+                    Branding Identity
+                </h2>
+                <h1 class="h9">
+                    The katsbrune bookstore & cafe
+                </h1>
+            </div>
+            <img class="round-img" src="./Website Images/Katsbrune/The Katsbrune-Sign Mockup-2 (1).jpg" alt="Pristine Clean Website dashboard">
+        </div>
+    </div>
+    <main class="hidden">
+
+        <div class="main-section project-section">
+            <div class="section-subtitle">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight orb">
+                <h2 class="h8">
+                    Overview
+                </h2>
+            </div>
+            <h6>
+                Designing a Memorable and Expressive Brand Identity for a Local Cat Cafe
+            </h6>
+            <p>
+                This project was a concept for a bookstore and cat café located in Lexington, Kentucky prized on its commitment to providing a cozy, cool, and relaxing environment for book, cat, and coffee lovers alike.
+            </p>
+        </div>
+
+        <div class="project-info">
+            <hr class="thin-line">
+                <div class="project-info-text">
+                    <div class="info-section">
+                        <p class="p4">Timeline</p>
+                        <p class="info-bold">
+                            2 Months                       
+                         </p>
+                    </div>
+                    <div class="info-section">
+                        <p class="p4">Platform</p>
+                        <p class="info-bold">
+                            Brand Identity
+                        </p>
+                    </div>
+                    <div class="info-section">
+                        <p class="p4">My Role</p>
+                        <p class="info-bold">
+                            Graphic Designer
+                        </p>
+                    </div>
+                </div>
+            <hr class="thin-line">
+        </div>
+
+        <div class="main-section project-section">
+            <div class="section-subtitle">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight orb">
+                <h2 class="h8">
+                    The Objective
+                </h2>
+            </div>
+            <h6>
+                Building a Brand Guidelines with Strong Standards that Tell a Compelling Story
+            </h6>
+            <p>
+                The objective was to create comprehensive brand guidelines that establish and showcase how to best use The Katsbrune logo and brand. Through the design process, I was able to draft, iterate, and finalize the tone of the brand ultimately creating a compelling and friendly identity that speaks to its intended audience.
+            </p>
+        </div>
+
+        <div class="project-image round-img">
+            <img src="./Website Images/Katsbrune/Katsbrune-Bookmark mockup-1.jpg" alt="Katsbrune Bookmark Mockup">
+        </div>
+
+
+        <div class="sub-section project-section" id="pad50">
+            <h6>
+                The Katsbrune Logo
+            </h6>
+            <p>
+                Combining elements of The Katsbrune’s core business, I was able to create a simple yet communicative logo that feels welcoming and cozy. Depicted in the logo is the store ‘mascot,’ Bimblez the cat, a book, and at the end of his tail a small flame can be identified signifying the café portion of the business. These three elements not only represent the services The Katsbrune offers but showcase its versatility and personality.
+            </p>
+        </div>
+
+        <div class="project-image round-img">
+            <img src="./Website Images/Katsbrune/Katsbrune Logo with BG flat-cropped.jpg" alt="Katsbrune Full Logo">
+        </div>
+
+        
+        <div class="sub-section project-section" id="pad50">
+            <h6>
+                The Katsbrune Branding Assets
+            </h6>
+            <p>
+                Staying consistent with the branding guidelines are The Katsbrune letterhead and business card, which not only represent The Katsbrune’s visual identity but also serve as a great communication and contact point for its customers. This collateral better showcases who The Katsbrune is and allows more thorough, personal communication with its intended audiences.
+            </p>
+        </div>
+
+
+        <div class="project-image round-img" id="final-designs">
+            <img src="./Website Images/Katsbrune/Business Card Mockup_v4.jpg" alt="Katsbrune Business Card Mockup">
+            <img src="./Website Images/Katsbrune/letterhead mockup.jpg" alt="Katsbrune letterhead mockup">
+            <img src="./Website Images/Katsbrune/Sweatshirt Mockup_v2 (1).jpg" alt="Katsbrune Sweatshirt mockup">
+            <img src="./Website Images/Katsbrune/Katsbrune-Mug Mockup-1.jpg" alt="Katsbrune Mug mockup">
+
+        </div>
+
+        
+        <div class="main-section project-section">
+            <div class="section-subtitle">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight orb">
+                <h2 class="h8">
+                    Branding identity
+                </h2>
+            </div>
+            <h6>
+                The Katsbrune Branding Identity
+            </h6>
+            <p>
+                The Katsbrune Branding Guidelines are a comprehensive set of instructions on how to best utilize the logo and brand. Aimed to establish a coherent, consistent, and personable experience for all its viewers, the guidelines serve as a foundation and voice for everything The Katsbrune is and should be.
+            </p>
+        </div>
+
+        
+        <div id="projects">
+            <script>
+                fetch('projects.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('projects').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+
+
+
+
+    </main>
+
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

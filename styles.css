@@ -217,6 +217,7 @@ h6 {
   font-size: 1rem;
   color: var(--secondary-light-grey);
   letter-spacing: 4px !important;
+  line-height: 1.4rem;
 }
 
 
@@ -1123,6 +1124,8 @@ button, .btn-2 {
 .project-hero-container {
   background: linear-gradient(to top, var(--primary-grey), var(--alt-grey));
   margin-top: 0;
+  padding-right: clamp(1.8rem, 8vw, 4rem);
+  padding-left: clamp(1.8rem, 8vw, 4rem);
 }
 
 .project-hero {
@@ -1133,9 +1136,9 @@ button, .btn-2 {
   gap: clamp(50px, 5vw, 100px);
   /* margin-top: clamp(50px, 5vw, 110px); */
   padding-top: clamp(160px, 8vw, 310px);
-  padding-right: clamp(1.8rem, 8vw, 4rem);
-  padding-left: clamp(1.8rem, 8vw, 4rem);
+
   padding-bottom: clamp(25px, 5vw, 50px);
+
 }
 
 .project-hero > * {
@@ -1150,6 +1153,9 @@ button, .btn-2 {
   -webkit-text-fill-color: transparent;
   overflow: visible;
   margin-top: 1%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: clamp(.2rem, 5vw, .5rem);
 }
 
 .project-section {
