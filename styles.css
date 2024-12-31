@@ -35,6 +35,10 @@
     src: url(Fonts/AzoSansTest-Bold-BF663af5f7827f4.otf);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 
 
   body {
@@ -48,6 +52,7 @@
     padding-left: clamp(1.8rem, 8vw, 4rem);
     /* max-width: 1140px; */
     margin: 0 auto;
+    position: relative;
 
   }
 
@@ -471,6 +476,7 @@ button, .btn-2 {
   .btn-primary {
     color: var(--primary-light-grey);
     padding: 1.2rem 2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4.0625rem;
@@ -481,6 +487,7 @@ button, .btn-2 {
     transition: .5s ease;
     cursor: pointer;
     line-height: 2rem;
+    gap: .6rem;
   }
 
 
@@ -492,6 +499,8 @@ button, .btn-2 {
     font-size: clamp(14px, 5vw, 18px);
     color: var(--primary-light-grey);
   }
+
+
 
 
     /*Button Animated */
@@ -598,9 +607,13 @@ button, .btn-2 {
 
 
   .hero-buttons {
-    gap: 1.2rem;
     padding-top: clamp(2rem, 5vw, 3rem);
     flex-wrap: wrap;
+  }
+
+  .hero-buttons, .project-nav-buttons {
+    gap: 1.2rem;
+
   }
 
 
@@ -1259,7 +1272,7 @@ button, .btn-2 {
   position: relative;
 }
 
-.project-image {
+.project-image, .ignite-images {
   border-radius: clamp(2px, 5vw, 10px);
   display: flex;
   justify-content: center;
@@ -1273,6 +1286,7 @@ button, .btn-2 {
 .project-image, .img-columns {
   padding-top: clamp(25px, 5vw, 50px);
   padding-bottom: clamp(25px, 5vw, 50px);
+  border-radius: clamp(2px, 5vw, 10px);
 }
 
 .img-columns {
@@ -1328,14 +1342,9 @@ button, .btn-2 {
 
 }
 
-@media (max-width: 600px) {
-  .solution-card {
-    width: 100%;
-    height: auto;
-  }
-}
 
 
+/* Special Padding Id's */
 
 #pad50, #llp-brand, .pad50 {
   padding-top: clamp(25px, 5vw, 50px) !important;
@@ -1353,6 +1362,13 @@ button, .btn-2 {
   margin-bottom: 0;
 }
 
+#margin50 {
+  margin-top: clamp(25px, 5vw, 50px);
+  margin-bottom: clamp(25px, 5vw, 50px);
+}
+
+
+
 
 
 #research-img img, #final-designs img {
@@ -1369,6 +1385,81 @@ button, .btn-2 {
 }
 
 
+/* Ignite Project */
+
+.ignite-images {
+  gap: 0;
+  overflow: hidden;
+}
+
+.ignite-images img {
+  overflow: hidden;
+  border-radius: none !important;
+}
+
+
+/* Project Nav buttons */
+
+.project-nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: clamp(50px, 5vw, 100px);
+}
+
+.project-nav-buttons button {
+  width: 206px;
+}
+
+@media (max-width: 780px) {
+  .project-nav-buttons button {
+    width: 84vw;
+  }
+}
+
+
+/* Side Navigation */
+
+.side-nav {
+  position: fixed;
+  /* height: 100vh; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1.4rem;
+  padding: 2rem 4rem;
+  z-index: 5;
+  top: 50%; /* Start positioning from the middle of the viewport */
+  right: 0; /* Aligns the menu to the left side */
+  transform: translateY(-50%); /* Centers the menu vertically */
+}
+
+.side-nav a:hover {
+  color: var(--primary-light-grey);
+}
+
+@media (max-width: 1650px) {
+  .side-nav {
+    display: none;
+  }
+
+  top: auto; /* Reset top position */
+  bottom: 0; /* Fix to the bottom */
+  width: 100%; /* Make it span the full width of the viewport */
+  transform: none; /* Remove the transform property */
+  display: flex; /* Change layout for the bottom nav */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: row;
+  background-color: var(--secondary-grey);
+  flex-wrap: nowrap;
+
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of list items */
+  scrollbar-width: none; /* Hide scrollbars for modern browsers */
+  -ms-overflow-style: none; /* Hide scrollbars for IE and Edge */
+}
+
 
 /* Project Card */
 
@@ -1378,7 +1469,6 @@ button, .btn-2 {
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   gap: clamp(25px, 5vw, 30px);
-  padding: 0 30px;
   justify-content: center;
   align-content: center;
   padding-top: clamp(25px, 5vw, 50px);
@@ -1630,7 +1720,14 @@ footer a {
     .number-section h6 {
       padding-left: 50px;
     }
+
+    .solution-card {
+      width: 100%;
+      height: auto;
+    }
   }
+
+
 
   #three {
     margin-top: 2%;
@@ -1653,8 +1750,7 @@ footer a {
       max-width: 320px;
     }
 
-    .hero-buttons {
-    }
+  
 
     .project-nav-container {
       grid-template-columns: 1fr;
