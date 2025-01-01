@@ -20,15 +20,61 @@
         </script>
     </div>
 
+<div class="hero-2">
+    <div class="hero-2-container resume-container hidden">
+        <div class="hero-2-content half resume-content">
+            <div class="sub-title">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight">
+                <h5>
+                    MORE PROJECTS
+                </h5>
+            </div>
+            <h1 class="h9">
+                The Vault
+            </h1>
+            <p class="p2">
+                Welcome to my personal archive of personal and professional projects that give a more in-depth glimpse into the content I enjoy creating. I hope you can take some inspiration from my designs as I have from so many other great designers. Enjoy!
+            </p>
+        </div>
+        <div class="resume-img half round-img">
+            <img src="./Website Images/Assets/Vault 3d Render-v1.png" alt="3d Vault Render">
+        </div>
+    </div>
+</div>
+
 <main>
 
+    <div class="vault-projects section-padding hidden">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Pat Kav Post V2.jpg" alt="Pat Kavanagh Lacrosse Post">
+        <img class="round-img vault-img" src="./Website Images/The Vault/UK lax post (1).jpg" alt="Bryce Moad Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Schreiber Post.jpg" alt="Tom Schreiber Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/BT Last Ride Final.jpg" alt="Ben Thomas Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Jeff Teat Post Filtered.jpg" alt="Jeff Teat Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Michael Sowers Post.jpg" alt="Michael Sowers Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Grant Ament Round 2 Lacrosse Post.jpg" alt="Grant Ment Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Teat Post (1).jpg" alt="Jeff Teat Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Archers Post V1 (1).jpg" alt="Archers Lacrosse Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Rocket League Poster_Blue Filter.jpg" alt="Rocket League Poster Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/UK Wildcat Post.jpg" alt="UK wildcat Poster Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Cotton Candy Castle Draft 1 CR Filter (1).jpg" alt="Cotton Candy Castle Photoshop Edit">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Design As_Presentation_Ben Thomas-01.jpg" alt="Lacrosse is made for everyone poster 1">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Design As_Presentation_Ben Thomas-02.jpg" alt="Lacrosse is made for everyone poster 2">
+        <img class="round-img vault-img" src="./Website Images/The Vault/Design As_Presentation_Ben Thomas-03.jpg" alt="Lacrosse is made for everyone poster 3">
 
-
-
-
+    </div>
 </main>
 
 
+
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
     <script src="index.js"></script>
   
 </body>
