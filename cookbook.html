@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+
+
+</head>
+<body class>
+    <div id="nav-container">
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-container').innerHTML = html;
+                });
+        </script>
+     </div>   
+
+    <div class="project-hero-container hidden">
+        <div class="project-hero" id="intro">
+            <div class="ph-content">
+                <h2 class="h10">
+                    Print and Publication
+                </h2>
+                <h1 class="h9">
+                    Mom's Cookbook
+                </h1>
+            </div>
+            <img class="round-img" src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/front cover standing.jpg" alt="Finlandia Infographic Mockup">
+        </div>
+    </div>
+
+    <div class="side-nav-2">
+        <a href="#intro"><img src="./Website Images/Icons/Arrow Icon-light grey.svg"></a>
+    </div>
+
+
+    <main class="hidden">
+
+        <div class="main-section project-section">
+            <div class="section-subtitle">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight orb">
+                <h2 class="h8">
+                    Overview
+                </h2>
+            </div>
+            <h6>
+                Designing and Printing a Delicious, Personal Cookbook in Honor of my Mother
+            </h6>
+            <p>
+                This cookbook was created for my mother and our family inspired by some of the delicious meals she has made raising my siblings and me. My objective was to create a cookbook that commemorates my mother and feels somewhat rustic and gritty like a kitchen environment while also having a playful nature to it. Using textural overlays, unique, sharp, and round type pairings, and stylized, illustrative imagery, I was able to achieve my objective.
+            </p>
+            <br>
+            <br>
+
+            <p>
+                <span style="font-family: 'azo-bold';">Note:</span> For security purposes, not all recipes and spreads are displayed below. If you’d like to view the rest of the cookbook, please take it up with my mother.
+            </p>
+        </div>
+
+
+        <div class="project-image round-img" id="final-designs">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Main Dishes.jpg" alt="Main Dishes Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Greek Fish.jpg" alt="Greek Fish Recipe Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Veggie Stir Fry.jpg" alt="Shrimp and Veggie Stir Fry Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Baked Ziti.jpg" alt="Baked Ziti Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Side Dishes.jpg" alt="Side Dishes Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Hash Brown Casserole.jpg" alt="Hash Brown Casserole Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Fruit Bowl.jpg" alt="Fruit Bowl Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Deserts.jpg" alt="Desserts Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Oatmeal Date Muffins.jpg" alt="Oatmeal Date Muffins Page">
+            <img src="./Website Images/Mom's Cookbook/Actual Cookbook Photos/Christmas Cookies.jpg" alt="Christmas Cookies Page">
+
+
+
+        </div>
+
+
+
+        <div class="project-nav-buttons" id="margin50">
+            <a href="./finlandia.html"><button class="btn-primary"><img src="./Website Images/Icons/Arrow Left.svg">Last Project</button></a>
+            <a href="./index.html"><button class="btn-primary">Home</button></a>
+            <a href="./social-media.html"><button class="btn-primary">Next Project<img src="./Website Images/Icons/Arrow Right.svg"></button></a>
+        </div>
+
+        
+        <div id="projects">
+            <script>
+                fetch('projects.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('projects').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+
+
+
+
+    </main>
+
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

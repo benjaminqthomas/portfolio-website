@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Kentucky Social Media Posts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+
+
+</head>
+<body class>
+    <div id="nav-container">
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-container').innerHTML = html;
+                });
+        </script>
+     </div>   
+
+    <div class="project-hero-container hidden">
+        <div class="project-hero" id="intro">
+            <div class="ph-content">
+                <h2 class="h10">
+                    Digital Branding and Marketing
+                </h2>
+                <h1 class="h9">
+                    UK Social Media Posts
+                </h1>
+            </div>
+            <img class="round-img" src="./Website Images/UK Social Media/UK Social Media Mockup.jpg" alt="Finlandia Infographic Mockup">
+        </div>
+    </div>
+
+    <div class="side-nav-2">
+        <a href="#intro"><img src="./Website Images/Icons/Arrow Icon-light grey.svg"></a>
+    </div>
+
+
+    <main class="hidden">
+
+        <div class="main-section project-section">
+            <div class="section-subtitle">
+                <img src="./Website Images/Assets/section orb-v1.svg" alt="section highlight orb">
+                <h2 class="h8">
+                    Overview
+                </h2>
+            </div>
+            <h6>
+                Generating Awareness, Recruiting Students, and Building a Stronger Community Through Social Media Marketing and Branding
+            </h6>
+            <p>
+                These social media posts were created for the University of Kentucky’s College of Arts and Sciences social platforms. The posts were designed to bring awareness to certain events and holidays and keep followers engaged and informed.
+            </p>
+        </div>
+
+
+        <div class="project-image round-img" id="final-designs">
+            <img src="./Website Images/UK Social Media/Official Mockups/UK Social Media Mockup-summer classes.jpg" alt="Summer Courses Post">
+            <img src="./Website Images/UK Social Media/Official Mockups/UK Social Media Mockup-mlk.jpg" alt="MlK Day Post">
+            <img src="./Website Images/UK Social Media/Official Mockups/UK Facebook Post Mockup 5.jpg" alt="Recruitment Facebook Post Mockup">
+            <img src="./Website Images/UK Social Media/Official Mockups/UK Facebook Post Mockup 4.jpg" alt="Happy Chinese New Year Facebook Post Mockup">
+            <img src="./Website Images/UK Social Media/Official Mockups/UK Facebook Post Mockup 3.jpg" alt="UK Observatory Awareness Facebook Post Mockup">
+           
+
+        </div>
+
+
+
+        <div class="project-nav-buttons" id="margin50">
+            <a href="./cookbook.html"><button class="btn-primary"><img src="./Website Images/Icons/Arrow Left.svg">Last Project</button></a>
+            <a href="./index.html"><button class="btn-primary">Home</button></a>
+            <a href="./The Vault.html"><button class="btn-primary">Next Project<img src="./Website Images/Icons/Arrow Right.svg"></button></a>
+        </div>
+
+        
+        <div id="projects">
+            <script>
+                fetch('projects.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById('projects').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+
+
+
+
+    </main>
+
+    <div id="footer-container">
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
