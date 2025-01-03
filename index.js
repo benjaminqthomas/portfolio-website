@@ -23,45 +23,7 @@ entry.target.classList.toggle('show', entry.isIntersecting);
 
 // Gallery Carousel Activation 
 
-const images = [...document.querySelectorAll('.image')];
 
-//popup
-
-const popup = document.querySelector('.popup');
-const topBar = document.querySelector('.top-bar');
-const largeImage = document.querySelector('.large-image');
-const arrowBtn = document.querySelector('.arrow-btn');
-
-left index = 0; // will track our current image;
-
-images.forEach((item, i) => {
-  item.addEventListener('click', () => {
-    updateImage(i);
-    popup.classList.toggle('active');
-  })
-})
-
-
-const updateImage = (i) => {
-  let path = 'img/img${i+1}.png';
-}
-
-closeBtn.addEventListener('click', () => {
-  popup.classList.toggle('active');
-})
-
-
-leftArrow.addEventListener('click', () => {
-  if(index > 0) {
-    updateImage(index - 1);
-  }
-})
-
-rightArrow.addEventListener('click', () => {
-  if(index < images.length - 1) {
-    updateImage(index + 1);
-  }
-})
 
 
 

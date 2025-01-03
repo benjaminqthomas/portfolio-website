@@ -1492,6 +1492,11 @@ button, .btn-2 {
   border-radius: 50px;
   margin: 0 40px 40px 0;
   display: none;
+  transition: 300ms ease;
+}
+
+.side-nav-2:hover {
+  background: var(--alt-grey);
 }
 
 
@@ -1524,8 +1529,8 @@ button, .btn-2 {
   -ms-overflow-style: none; /* Hide scrollbars for IE and Edge */
 }
 
-#scroll-margin {
-  scroll-margin-top: 600px;
+.scroll-margin {
+  scroll-margin-top: 10rem;
 }
 
 
