@@ -21,7 +21,30 @@ entry.target.classList.toggle('show', entry.isIntersecting);
 
 
 
-// Gallery Carousel Activation 
+
+
+// Mobile Menu Activation 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('toggle-menu');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // Toggle menu visibility
+  menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click from propagating to the document
+    mobileMenu.classList.toggle('show');
+    menuToggle.classList.toggle('active'); // For the hamburger animation
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+      mobileMenu.classList.remove('show');
+      menuToggle.classList.remove('active');
+    }
+  });
+});
+
 
 
 
