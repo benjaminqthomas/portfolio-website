@@ -25,26 +25,56 @@ entry.target.classList.toggle('show', entry.isIntersecting);
 
 // Mobile Menu Activation 
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
+//   const menuToggle = document.getElementById('toggle-menu');
+//   const mobileMenu = document.getElementById('mobileMenu');
+
+//   // Toggle menu visibility
+//   menuToggle.addEventListener('click', (event) => {
+//     event.stopPropagation(); // Prevent click from propagating to the document
+//     mobileMenu.classList.toggle('show2');
+//     menuToggle.classList.toggle('active'); // For the hamburger animation
+//   });
+
+//   // Close menu when clicking outside
+//   document.addEventListener('click', (event) => {
+//     if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+//       mobileMenu.classList.remove('show2');
+//       menuToggle.classList.remove('active');
+//     }
+//   });
+// });
+
+
+
+function initializeMobileMenu() {
   const menuToggle = document.getElementById('toggle-menu');
   const mobileMenu = document.getElementById('mobileMenu');
 
+  if (!menuToggle || !mobileMenu) {
+      console.log('Menu elements not found');
+      return;
+  }
+
   // Toggle menu visibility
   menuToggle.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent click from propagating to the document
-    mobileMenu.classList.toggle('show');
-    menuToggle.classList.toggle('active'); // For the hamburger animation
+      console.log('Menu clicked!');
+      event.stopPropagation();
+      mobileMenu.classList.toggle('show2');
+      menuToggle.classList.toggle('active');
   });
 
   // Close menu when clicking outside
   document.addEventListener('click', (event) => {
-    if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-      mobileMenu.classList.remove('show');
-      menuToggle.classList.remove('active');
-    }
+      if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+          mobileMenu.classList.remove('show2');
+          menuToggle.classList.remove('active');
+      }
   });
-});
+}
 
+// Make the function available globally
+window.initializeMobileMenu = initializeMobileMenu;
 
 
 

@@ -297,7 +297,8 @@ nav {
 
 
 .nav-logo img {
-  height: clamp(2rem, 5vw, 2.8rem);
+  height: clamp(1.6rem, 5vw, 2rem);
+  margin-bottom: clamp(4px, 5vw, 16px);
 }
 
 a {
@@ -340,12 +341,12 @@ a {
 
 
 .mobile-menu {
-  display: none; /* Start hidden */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 24rem;
+  width: clamp(20rem, 5vw, 24rem);
   position: fixed;
   right: 0;
   top: 0;
@@ -353,15 +354,15 @@ a {
   padding: 110px 0;
   gap: 4rem;
   transition: transform 0.3s ease;
-  transform: translateX(100%); /* Hidden by default */
+  transform: translateX(100%);
   z-index: 2000;
   
 }
 
-/* .mobile-menu.show {
-  display: flex; 
+.show2 {
+  /* right: 0; */
   transform: translateX(0); 
-} */
+}
 
 
 .mobile-nav-links ul {
@@ -373,7 +374,7 @@ a {
 }
 
 .mobile-nav-links li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .mobile-social-icons img {
@@ -382,7 +383,7 @@ a {
 
 .mobile-social-icons {
   display: flex;
-  gap: 15px;
+  gap: 1.2rem;
 
 }
 
@@ -400,9 +401,9 @@ a {
   text-decoration: none;
 }
 
-.show {
+/* .show2 {
   right: 0;
-}
+} */
 
 /* Hamburger Menu */
 
@@ -466,6 +467,22 @@ a {
 }
 
 /* End of Nav */
+
+
+/* Active Nav Page */
+
+/* Style for active page in navigation */
+.nav-links a.active-page,
+.mobile-nav-links a.active-page {
+    color: var(--primary-light-grey); /* Or any color you prefer */
+    /* font-family: 'azo-bold'; */
+}
+
+/* Optional: you can also style the hover state differently for the active page */
+.nav-links a.active-page:hover,
+.mobile-nav-links a.active-page:hover {
+    color: var(--primary-light-grey); /* Keep the same color on hover */
+}
 
 
 
@@ -1887,9 +1904,9 @@ footer a {
   @media (max-width: 1300px) {
     .nav-links, nav button {
       display: none;
-    }
+    } 
     .menu {
-      display: flex;
+      display: block !important;
     }
 
   }
@@ -1931,6 +1948,10 @@ footer a {
 
     .img-columns {
       grid-template-columns: 1fr;    
+    }
+
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -2020,6 +2041,10 @@ footer a {
     .vault-projects {
       grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .gallery {
+      grid-template-columns: 1fr;
     }
   }
 
