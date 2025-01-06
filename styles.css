@@ -298,7 +298,7 @@ nav {
 
 .nav-logo img {
   height: clamp(1.6rem, 5vw, 2rem);
-  margin-bottom: clamp(4px, 5vw, 16px);
+  margin-bottom: clamp(4px, 2vw, 16px);
 }
 
 a {
@@ -654,6 +654,8 @@ button, .btn-2 {
     color: var(--primary-light-grey);
     font-size: clamp(14px, 5vw, 20px);
     line-height: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: bold;
   }
 
   .hero h1 {
@@ -701,9 +703,12 @@ button, .btn-2 {
   width: 100%;
   height: 100%;
   transition: .8s ease;
-
-
 }
+
+.resume-img img:hover {
+  transform: rotateZ(5deg) rotateY(15deg); /* Rotates the image 45 degrees around the Z-axis */
+}
+
 
 .hero-2-img {
   overflow: hidden;
