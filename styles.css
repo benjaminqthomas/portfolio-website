@@ -157,7 +157,6 @@ background: linear-gradient(to top, var(--secondary-light-grey), var(--primary-l
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 overflow: hidden;
-font-style: italic;
 padding: .2rem;
 }
 
