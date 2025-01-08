@@ -355,7 +355,7 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: #121314ee;
   padding: 110px 0;
   gap: 4rem;
   transition: transform 0.3s ease;
@@ -1181,6 +1181,27 @@ button, .btn-2 {
   opacity: 1;
  }
 
+
+ /* Qualities Cards */
+
+ .qualities-card {
+  max-height: 314.8;
+ }
+
+ #bulb-icon {
+  height: 80px;
+ }
+
+ #people-icon {
+  height: 70px;
+  margin-top: 10px;
+ }
+
+ #detail-icon {
+  height: 62px;
+  margin-top: 18px;
+
+ }
 
 
 /* Project Page Styling */
