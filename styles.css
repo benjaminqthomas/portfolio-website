@@ -406,7 +406,7 @@ a {
 }
 
 .mobile-menu h6 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: 'azo';
   color: var(--secondary-light-grey);
   letter-spacing: 4px;
@@ -2004,15 +2004,15 @@ footer a {
     }
 
     .number-section img {
-      position: absolute;
+      display: none;
+      /* position: absolute;
       height: 45px;
-      top: 8%;
-      
+      bottom: 10px; */
       
     }
 
     .number-section h6 {
-      padding-left: 50px;
+      /* padding-left: 50px; */
     }
 
     .solution-card {
