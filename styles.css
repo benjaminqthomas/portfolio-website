@@ -711,14 +711,14 @@ button, .btn-2 {
   .hero .p3 {
     color: var(--primary-light-grey);
     font-size: clamp(16px, 2vw, 20px);
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     letter-spacing: 3px;
     font-weight: bold;
   }
 
   .hero h1 {
-    margin-bottom: clamp(14px, 2vw, 22px);
-    margin-top: clamp(0px, 2vw, 8px);
+    margin-bottom: clamp(14px, 2vkkkkkkkkkkkkkkkkkkkkkw, 22px);
+    margin-top: clamp(4px, 2vw, 8px);
   }
 
 
