@@ -710,14 +710,14 @@ button, .btn-2 {
 
   .hero .p3 {
     color: var(--primary-light-grey);
-    font-size: clamp(14px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     line-height: 1.8rem;
     letter-spacing: 3px;
     font-weight: bold;
   }
 
   .hero h1 {
-    margin-bottom: clamp(16px, 2vw, 22px);
+    margin-bottom: clamp(14px, 2vw, 22px);
     margin-top: clamp(0px, 2vw, 8px);
   }
 
@@ -1597,7 +1597,7 @@ button, .btn-2 {
   padding: 1rem;
   background-color: var(--secondary-grey);
   border: solid 1px var(--secondary-light-grey);
-  border-radius: 50px;
+  border-radius: 1000px;
   margin: 0 40px 40px 0;
   display: none;
   transition: 300ms ease;
@@ -1616,12 +1616,39 @@ button, .btn-2 {
   .side-nav {
     display: none;
   }
-
   .side-nav-2 {
     display: block;
   }
-
 }
+
+
+  /* .side-nav {
+    flex-direction: row;
+    width: 100%;
+    bottom: 0%;
+    top: auto;
+    justify-content: center;
+    padding: 30px 30px;
+    margin-bottom: -50px;
+    background: var(--secondary-grey);
+    cursor: grab;
+    border: 1px solid var(--alt-grey);
+  }
+
+  .side-nav a {
+    white-space: nowrap;
+  }
+  }
+
+  @media (max-width: 1325px) {
+    .side-nav {
+      justify-content: start;
+    }
+  } */
+
+
+
+
 
 .scroll-margin {
   scroll-margin-top: 10rem;
@@ -2049,11 +2076,16 @@ footer a {
   @media (max-width: 470px) {
     .hero-content h1 {
       max-width: 300px;
+      margin-top: 0;
     }
 
     .hero .p2 {
       /* text-align: left; */
       max-width: 320px;
+    }
+
+    .hero .p3 {
+      max-width: 260px;
     }
 
   
@@ -2070,6 +2102,11 @@ footer a {
 
     .gallery {
       grid-template-columns: 1fr;
+    }
+
+    .menu {
+      height: 24px;
+      width: 30px;
     }
   }
 
