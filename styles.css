@@ -1595,6 +1595,8 @@ button, .btn-2 {
   bottom: 0%; /* Start positioning from the middle of the viewport */
   right: 0; /* Aligns the menu to the left side */
   padding: 1rem;
+  height: 50px;
+  width: 50px;
   background-color: var(--secondary-grey);
   border: solid 1px var(--secondary-light-grey);
   border-radius: 1000px;
