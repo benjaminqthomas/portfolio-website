@@ -1645,7 +1645,9 @@ button, .btn-2 {
     display: none;
   }
   .side-nav-2 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
