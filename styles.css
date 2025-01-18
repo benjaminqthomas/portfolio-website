@@ -1987,6 +1987,11 @@ footer a {
       display: block !important;
     }
 
+    .hero h1:hover ~ .polaroid-photos {
+      display: none;
+      opacity: 0;
+    }
+
   }
 
 
