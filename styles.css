@@ -2113,11 +2113,8 @@ footer a {
     }
   }
 
-  @media (max-width: 494px) {
-    .hero h5 {
-      max-width: 290px;
-    }
-  }
+ 
+
 
 
   @media (max-width: 470px) {
