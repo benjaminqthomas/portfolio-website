@@ -224,6 +224,11 @@ h6 {
   line-height: 1.4rem;
 }
 
+.hero h5 {
+  text-align: center;
+  line-height: 1.8rem;
+}
+
 
 
 
@@ -2101,8 +2106,15 @@ footer a {
     margin-top: 2%;
   }
 
+
+  @media (max-width: 560px) {
+    .hero h5 {
+      max-width: 290px;
+    }
+  }
+
   @media (max-width: 494px) {
-    .hero .p3 {
+    .hero h5 {
       max-width: 290px;
     }
   }
