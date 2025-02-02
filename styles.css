@@ -2060,6 +2060,11 @@ footer a {
       grid-template-columns: repeat(2, 1fr);
 
     }
+
+    .hero-img {
+      height: auto;
+      max-width: 100%;
+    }
   }
 
 
@@ -2097,6 +2102,10 @@ footer a {
 
     .mobile-menu {
       width: 100vw;
+    }
+
+    .hero img {
+      display: none;
     }
   }
 
