@@ -1728,6 +1728,7 @@ button, .btn-2 {
 .project-card-img {
   overflow: hidden;
   height: 100%;
+  width: 100%;
 }
 
 .pc-img {
