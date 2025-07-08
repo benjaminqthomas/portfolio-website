@@ -897,6 +897,19 @@ button, .btn-2 {
 
 
 
+  /* notice message */
+
+  .notice-message {
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    background: linear-gradient(45deg, var(--secondary-grey), var(--alt-grey));
+    padding: clamp(1.5625rem, 5vw, 3.125rem);
+    border-radius: clamp(1.2px, 5vw, 12px);
+    border: 1px solid var(--Alt-Grey, #262626);
+    gap: clamp(16px, 8vw, 24px);
+  }
+
 
   /* Featured Project Card */
 
