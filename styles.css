@@ -908,6 +908,12 @@ button, .btn-2 {
     border-radius: clamp(1.2px, 5vw, 12px);
     border: 1px solid var(--Alt-Grey, #262626);
     gap: clamp(16px, 8vw, 24px);
+    align-items: flex-start;
+  }
+
+  .notice-message img {
+    width: clamp(16px, 8vw, 44px);
+    margin-top: clamp(8px, 8vw, 12px);
   }
 
 
